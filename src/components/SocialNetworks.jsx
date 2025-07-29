@@ -6,17 +6,17 @@ const socialNetworks = [
     {
         name: 'LinkedIn',
         icon: <FaLinkedin />,
-        url: "https://www.linkedin.com/in/renan-rocha/"
+        url: "https://www.linkedin.com/in/renan-rocha919/"
     },
     {
         name: 'GitHub',
         icon: <FaGithub />,
-        url: "https://github.com/renanrocha"
+        url: "https://github.com/Renan0Rocha"
     },
     {
         name: 'Instagram',
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/renanrocha/"
+        url: "https://www.instagram.com/renan_rocha_s/"
     }
 ];
 
@@ -24,7 +24,7 @@ const SocialNetworks = () => {
     return (
         <section id="social-networks">
             {socialNetworks.map((network) => (
-                <a key={network.name} href={network.url} target="_blank" rel="noopener noreferrer">
+                <a href={network.url} className="social-btn" key={network.name}  target="_blank" rel="noopener noreferrer">
                     {network.icon}
                 </a>
             ))}
