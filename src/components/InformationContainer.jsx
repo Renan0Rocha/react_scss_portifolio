@@ -7,17 +7,26 @@ const InformationContainer = () => {
     return <section id="information">
         <div className="info-card">
             <AiFillPhone id="phone-icon"/>
-            <p>Telefone: (69) 0000-1143</p>
-        </div>
-          <div className="info-card">
-            <AiFillMail id="email-icon"/>
-            <p>Email: renanro919@gmail.com</p>
+            <div>
+                <h3>Telefone</h3>
+                <p>(69) 0000-1143</p>
+            </div>
         </div>
         <div className="info-card">
-            <AiFillEnvironment id="location-icon"/>
-            <p>Localização: Presidente Médici - RO</p>
+            <AiFillMail id="email-icon" />
+            <div>
+                <h3>Email:</h3>
+                <p>renanro919@gmail.com</p>
+            </div>
         </div>
-    </section>;
+        <div className="info-card">
+            <AiFillEnvironment id="pin-icon"/>
+            <div>
+                <h3>Localização:</h3>
+                <p>Presidente Médici - RO</p>
+            </div>
+        </div>
+        </section>;
 };
 
 
